@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthenics</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="top">
+        <div style="padding-left: 60px; padding-top: 30px;"><img src="cali_icon.jpg" width="55px" height="55px">
+        </div>
+        <div>
+            <p style="color: #ffffff;font-size: x-large;padding-left: 15px;padding-top: 40px;font-weight: bold;">CALI.COM
+            </p>
+        </div>
+     
+        <div class="topNavigation" style="padding-left: 45% ">
+            <div class="dropdown">
+                <p class="ex">Exercises</p>
+                  <div class="content">
+                    <a href="Exercises/Beginner/beginner.html">Beginner</a>
+                    <a href="Exercises/Intermediate/intermediate.html">Intermediate</a>
+                    <a href="Exercises/Advanced/advanced.html">Advanced</a>
+                  </div>
+                
+            </div>
+        </div>
+        
+        <div class="topNavigation">
+            <a href="shopping/shopping_page.html" style="  text-decoration: none; color: white;">  <p class="ex">Equipment </p></a>
+          
+        </div>
+        <div class="topNavigation">
+            <a href="#articles" style="text-decoration: none; color: white;"> <p class="ex">Articles</p></a>
+           
+        </div>
+        </div>
+        
+        <!-- <div class="topNavigation">
+            <p
+                style="border: 10px;background-color: blue; width: 100px;height: 30px;text-align:center;border-radius: 70% ;">
+                SignUp</p>
+        </div> -->
+    </div>
+
+    <!-- Login/Signup Form -->
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <div class="form login_form">
+                <form id="login-form">
+                    <h2>Login</h2>
+                    <div class="input_box">
+                        <input type="email" id="login-email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                        <span class="error-message" id="login-email-error"></span>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" id="login-password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                        <span class="error-message" id="login-password-error"></span>
+                    </div>
+                    <button class="button" type="submit">Login now</button>
+                    <div class="login_signup">Don't have an account? <a id="show-signup">Signup</a></div>
+                </form>
+            </div>
+            
+            <div class="form signup_form">
+                <form id="signup-form">
+                    <h2>Signup</h2>
+                    <div class="input_box">
+                        <input type="email" id="signup-email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                        <span class="error-message" id="signup-email-error"></span>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" id="signup-password" placeholder="Create password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                        <span class="error-message" id="signup-password-error"></span>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" id="confirm-password" placeholder="Confirm password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+                    <button class="button" type="submit">Signup now</button>
+                    <div class="login_signup">Already have an account? <a id="show-login">Login</a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    <section class="quotes">
+        <div class="container">
+            <h2>Discover Strength By Pushing Your Limits</h2>
+            <p>Calisthincs is the art of using one's body weight as resistance to develop muscles</p>
+            <br><br>
+            <div class="buttons">
+                <button id="form-open">Login Now</button>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <!-- Articles Section -->
+    <section class="articles">
+        <div class="container">
+            <h2 id="articles">Featured Articles</h2>
+            <div class="row" >
+                <div class="card card-1">
+                    <h2>Introduction to Calisthenics</h2>
+                    <p>Learn the basics of bodyweight training and how to get started with calisthenics.</p>
+                    <a href="https://caliathletics.com/downloads/caliathletics_beginner_guide.pdf?_ke=eyJrbF9lbWFpbCI6ICJ0aGV5aXBhcmtAZ21haWwuY29tIiwgImtsX2NvbXBhbnlfaWQiOiAiS25NMkhuIn0%3D" class="btn">Read More</a>
+                </div>
+                <div class="card card-2">
+                    <h2>Workout for Beginners</h2>
+                    <p>Discover the best workout to kickstart your fitness journey!</p>
+                    <a href="https://www.bodyweightmuscle.com/beginner-calisthenics-workout-guide-no-equipment-necessary/" class="btn">Read More</a>
+                </div>
+                <div class="card card-3">
+                    <h2>Essential Fitness Equipment</h2>
+                    <p>Find out which equipment you need in order to train or to build a home gym</p>
+                    <a href="https://www.beachbodyondemand.com/blog/calisthenics-equipment" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <!-- Fitness Equipment Section -->
+    <div class="equip-container">
+        <div class="image-container"></div>
+        <div class="content">
+            <h1>High-Quality Fitness Equipment</h1>
+            <p>We ship workout gear essentials directly to your doorstep. Our goal is to offer high-quality equipment at affordable price points.</p>
+            <a href="http:/shopping/shopping_page.html" class="btn">Shop Now</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Calisthenics Hub. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="https://wa.me/96181834553">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

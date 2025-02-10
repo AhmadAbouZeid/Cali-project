@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+    <!-- Addind google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title> Equipment Shopping</title>
+    <link rel="stylesheet" href="shopping_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+
+<body >
+    <div class="top">
+        <div style="padding-left: 60px; padding-top: 30px;"><img src="cali_icon.jpg" width="55px" height="55px">
+        </div>
+        <div style="color: #fff;" class="topNavigation">
+            <p >CALI.COM</p>
+        </div>
+        
+        <div class="topNavigation"  style="padding-left: 45% ">
+            <a href="../index.html"  style="  text-decoration: none;
+     color: #000;"> <p>Home</p> </a>
+         </div>
+         <div class="topNavigation">
+           
+             <div class="dropdown">
+                 <p class="ex">Exercises</p>
+                   <div class="content">
+                     <a href="../Exercises/Beginner/beginner.html">Beginner</a>
+                     <a href="../Exercises/Intermediate/intermediate.html">Intermediate</a>
+                     <a href="../Exercises/Advanced/advanced.html">Advanced</a>
+                   </div>
+                 
+             </div>
+         </div>
+ 
+         <div class="topNavigation">
+             <a href="../index.html#articles" style="text-decoration: none; color: #000;"><p>Articles</p></a>
+         </div>
+        <div class="topNavigation">
+            <div id="cart-icon">
+                <i class="ri-shopping-cart-2-line"></i>
+                <span class="cart-item-count"></span>
+            </div>
+        </div>
+        </div>
+    
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+        <div style= "margin-top: 50px;"class ="swiper-col">
+            <div class="equips">
+                <p>Parallettes</p>
+            </div>
+            <div class="equips">
+                <p>Pullup bars</p>
+            </div>
+        </div>
+        
+        <div class="body2">
+            <div class="body3">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <!-- Product 1 -->
+                            <li class="card-item swiper-slide product-box">
+                                <a href="#" class="card-link">
+                                    <img src="shop img/parallettes-pro-calisthenics-product-photo.webp" alt="Card Image" class="card-image">
+                                    <p class="product-title">Parallettes Pro</p>
+                                    <ul class="custom-list">
+                                        <li><h2 class="price"> 80$</h2></li>
+                                        <li><h2 class="feature">40mm Beech Wood</h2></li>
+                                        
+                                    </ul>
+                                    <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                                </a>
+                            </li>
+                            <!-- Product 2 -->
+                            <li class="card-item swiper-slide product-box">
+                                <a href="#" class="card-link">
+                                    <img src="shop img/premium-parallettes-max-product-photo (1).webp" alt="Card Image" class="card-image">
+                                    <p class="product-title">Parallettes Max</p>
+                                    <ul class="custom-list">
+                                        
+                                        <li><h2 class="price">99$</h2></li>
+                                        <li><h2 class="feature">40mm Beech Wood</h2></li>
+                                    </ul>
+                                    <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                                </a>
+                            </li>
+                             <!-- Product 3 -->
+                    <li class="card-item swiper-slide product-box">
+                        <a href="#" class="card-link">
+                            <img src="shop img/mini.webp" alt="Card Image" class="card-image">
+                            <p class="product-title">Parallettes Mini</p>
+                            <ul class="custom-list">
+                                
+                                <li><h2 class="price"> 65$</h2></li>
+                                <li><h2 class="feature">40mm Beech Wood</h2></li>
+                            </ul>
+                            <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                        </a>
+                    </li>
+
+                    <!-- Product 4 -->
+                    <li class="card-item swiper-slide product-box">
+                        <a href="#" class="card-link">
+                            <img src="shop img/gornation-metal-parallettes-1.webp" alt="Card Image" class="card-image">
+                            <p class="product-title">Parallettes Metal</p>
+                            <ul class="custom-list">
+                               
+                                <li><h2 class="price"> 80$</h2></li>
+                                <li><h2 class="feature">40mm matte surface</h2></li>
+                            </ul>
+                            <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                        </a>
+                    </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="body3">
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <!-- Product 5 -->
+                    <li class="card-item swiper-slide product-box">
+                        <a href="#" class="card-link">
+                            <img src="shop img/pullupstationwithoutdipextension.webp" alt="Card Image" class="card-image">
+                            <p class="product-title">Pullup Station</p>
+                            <ul class="custom-list">
+                                <li><h2 class="price"> 350$</h2></li>
+                                <li><h2 class="feature">All in one</h2></li>
+                                <li><h2 class="feature">20+ Exercises</h2></li>
+                                
+                            </ul>
+                            <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                        </a>
+                    </li>
+
+                    <!-- Product 6 -->
+                    <li class="card-item swiper-slide product-box">
+                        <a href="#" class="card-link">
+                            <img src="shop img/pull-up-bar-multi-4 (1).webp" alt="Card Image" class="card-image">
+                            <p class="product-title">Pullup Bar Multi</p>
+                            <ul class="custom-list">
+                                <li><h2 class="price"> 140$</h2></li>
+                                <li><h2 class="feature">Robust steel construction</h2></li>
+                                <li><h2 class="feature">Wall or ceiling attachable</h2></li>
+                                <li><h2 class="feature">The ultimate home workout tool</h2></li>
+                                
+                            </ul>
+                            <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                        </a>
+                    </li>
+
+                    <!-- Product 7 -->
+                    <li class="card-item swiper-slide product-box">
+                        <a href="#" class="card-link">
+                            <img src="shop img/door-pull-up-bar-extend-it-product-photo-3.webp" alt="Card Image" class="card-image">
+                            <p class="product-title">Door Pullup Bar</p>
+                            <ul class="custom-list">
+                                <li><h2 class="price"> 40$</h2></li>
+                                <li><h2 class="feature">Safe & sturdy construction</h2></li>
+                                <li><h2 class="feature">Easily attached & detached</h2></li>
+                                <li><h2 class="feature">Foam grip surface for durability</h2></li>
+                                <li><h2 class="feature">Suitable for all standard door frames</h2></li>
+                                
+                            </ul>
+                            <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                        </a>
+                    </li>
+
+                    <!-- Product 8 -->
+                    <li class="card-item swiper-slide product-box">
+                        <a href="#" class="card-link">
+                            <img src="shop img/dip-bar-extension-pull-up-station-1_800x.webp" alt="Card Image" class="card-image">
+                            <p class="product-title">Dip Extension</p>
+                            <ul class="custom-list">
+                                <li><h2 class="price">80$</h2></li>
+                                <li><h2 class="feature">The dip extension for your Premium Pull Up Station</h2></li>
+                                <li><h2 class="feature">Suitable for every fitness level</h2></li>
+                                
+                            </ul>
+                            <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                        </a>
+                    </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="swiper-col">
+        <div class="equips">
+            <p>Bandages</p>
+        </div>
+        <div class="equips">
+            <p>Accessories</p>
+        </div>
+    </div>
+    <div class="body2">
+
+
+        <div class="body3">
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/1pwoerwristwrapsblackcalisthenics.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Workout Grip</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 30$</h2></li>
+                                    <li><h2 class="feature">Safety & stability for your workout</h2></li>
+                                    <li><h2 class="feature">Comfortable, elastic material</h2></li>
+                                    <li><h2 class="feature">With thumb loop & velcro closure</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/elbow-sleevesproduktbild.jpg" alt="Card Image" class="card-image">
+                                <p class="product-title">Elbow Sleeves</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 55$</h2></li>
+                                    <li><h2 class="feature">Comfortable compression for more stability</h2></li>
+                                    <li><h2 class="feature">Improved performance during training</h2></li>
+                                    <li><h2 class="feature">Support of forearm, elbow, and upper arm</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/arm-sleeves-black-calisthenics.jpg" alt="Card Image" class="card-image">
+                                <p class="product-title">Arm Sleeves</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 70$</h2></li>
+                                    <li><h2 class="feature">Supportive warmth for your entire arm</h2></li>
+                                    <li><h2 class="feature">Improved performance during training</h2></li>
+                                    <li><h2 class="feature">Comfortable compression for more stability</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/wristbands-gornation-black.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Wrist Bands</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 20$</h2></li>
+                                    <li><h2 class="feature">2 sweatbands to wipe away sweat during trainings</h2></li>
+                                    <li><h2 class="feature">Comfortable compression & warmth for your wrists</h2></li>
+                                    <li><h2 class="feature">Stylish workout accessory</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="body3">
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/jump-rope-gornation-1.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Jump Rope</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 22$</h2></li>
+                                    <li><h2 class="feature">Easily adjustable</h2></li>
+                                    <li><h2 class="feature">Professional ball bearings</h2></li>
+                                    <li><h2 class="feature">Non-slip metal handles</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/abwheel-1.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Abwheel</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 25$</h2></li>
+                                    <li><h2 class="feature">Assembled in seconds</h2></li>
+                                    <li><h2 class="feature">Comes with two knee pads for a comfortable workout</h2></li>
+                                    <li><h2 class="feature">Stable & robust construction</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/fingertrainersetgornation1.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Finger Training</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 15$</h2></li>
+                                    <li><h2 class="feature">Training of the fingers & forearms</h2></li>
+                                    <li><h2 class="feature">Three various strengths</h2></li>
+                                    <li><h2 class="feature">Help prevent imbalances</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/0006_Gripper.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Grip Trainers</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 18$</h2></li>
+                                    <li><h2 class="feature">Strengthen your forearms & hand muscles</h2></li>
+                                    <li><h2 class="feature">Improve your grip strength</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="swiper-col">
+        <div style="margin-left:325px;"  class="equips">
+            <p>Bands</p>
+        </div>
+        <div style="margin-left: 340px;" class="equips">
+            <p>Vests&Rings</p>
+        </div>
+    </div>
+    <div class="body2">
+
+
+        <div class="body3">
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/Heavy band.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Heavy Band</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 24$</h2></li>
+                                    <li><h2 class="feature">Highly versatile in bodyweight workouts</h2></li>
+                                    <li><h2 class="feature">The equipment for maximum progress</h2></li>
+                                    <li><h2 class="feature">Two layers for comfortable resistance</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/1-light-resistance-band-gornation_e8cff21a-7bb9-4af7-b237-5081da4ac0c7.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Light Band</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 12$</h2></li>
+                                    <li><h2 class="feature">Two layers for comfortable resistance</h2></li>
+                                    <li><h2 class="feature">The equipment for maximum progress</h2></li>
+                                    <li><h2 class="feature">Two layers for comfortable resistance</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/calisthenics-elastic-bands-4.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Elastic Bands</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 10$</h2></li>
+                                    <li><h2 class="feature">2 bands in 2 resistance levels</h2></li>
+                                    <li><h2 class="feature">Perfect for effective warm-ups</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/Anchore.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Door Anchor</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 8$</h2></li>
+                                    <li><h2 class="feature">Extends your exercise variety at home</h2></li>
+                                    <li><h2 class="feature">Suitable for resistance bands, sling trainers & rings</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="body3" id="rings">
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/20Kg.jpg" alt="Card Image" class="card-image">
+                                <p class="product-title">20KG Vest</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 130$</h2></li>
+                                    <li><h2 class="feature">Adjustable from 1-20kg</h2></li>
+                                    <li><h2 class="feature">Full range of motion</h2></li>
+                                    <li><h2 class="feature">Compact design for all exercises</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/10Kg.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">10KG Vest</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 95$</h2></li>
+                                    <li><h2 class="feature">Adjustable from 1-10kg</h2></li>
+                                    <li><h2 class="feature">Full range of motion</h2></li>
+                                    <li><h2 class="feature">Compact design for all exercises</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/rings.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Rings</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 50$</h2></li>
+                                    <li><h2 class="feature">Proven olympic dimensions</h2></li>
+                                    <li><h2 class="feature">Optimal grip due to 28mm birch wood</h2></li>
+                                    <li><h2 class="feature">4.5m long straps with markings</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide product-box">
+                            <a href="#" class="card-link">
+                                <img src="shop img/pathces.webp" alt="Card Image" class="card-image">
+                                <p class="product-title">Patches</p>
+                                <ul class="custom-list">
+                                    <li><h2 class="price"> 12$</h2></li>
+                                    <li><h2 class="feature">Velcro patch for backpack, weight vest & more</h2></li>
+                                    <li><h2 class="feature">High quality, durable silicone</h2></li>
+                                    <li><h2 class="feature">Various designs for calisthenics enthusiasts</h2></li>
+                                    
+                                </ul>
+                                <button class="add-cart">Add To Cart <span class="material-symbols-outlined"> shopping_cart</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="shopping.js"></script>
+</body>
+
+
+
+</html>
