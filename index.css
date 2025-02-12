@@ -371,7 +371,8 @@ footer ul li a:hover {
 
 
 .blur {
-    backdrop-filter: blur(10px); /* Applies blur effect */
+     /* backdrop-filter: blur(10px);   */
+        /* Applies blur effect */
     background: rgba(0, 0, 0, 0.3); /* Adds a dark overlay */
     transition: all 0.3s ease-in-out;
 }
@@ -397,7 +398,7 @@ footer ul li a:hover {
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease-out;
-    filter: blur(20px);
+    filter: blur(10px);
 }
 .home.show::before{
     opacity: 1;

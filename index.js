@@ -1,3 +1,6 @@
+// JavaScript for handling login and signup forms with validation
+
+// Select form elements
 const formOpenBtn = document.querySelector("#form-open"),
     home = document.querySelector(".home"),
     formContainer = document.querySelector(".form_container"),
@@ -22,12 +25,12 @@ const loginEmailError = document.getElementById("login-email-error"),
 
 // Function to disable scrolling
 function disableScroll() {
-    document.body.style.overflow = "hidden"; // Prevent scrolling
+    document.body.style.overflow = "hidden";
 }
 
 // Function to enable scrolling
 function enableScroll() {
-    document.body.style.overflow = ""; // Restore scrolling
+    document.body.style.overflow = "";
 }
 
 // Helper functions for validation
@@ -50,22 +53,25 @@ const setSuccess = (element) => {
 };
 
 const isValidEmail = (email) => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 };
 
-// Open form and disable scroll
+// Open form and disable scroll (Always show login form first)
 formOpenBtn.addEventListener("click", () => {
     home.classList.add("show");
     document.body.classList.add("blur");
-    disableScroll(); // Prevent scrolling
+    disableScroll();
+    formContainer.classList.remove("active"); // Ensure login form is displayed first
 });
 
 // Close form and enable scroll
 formCloseBtn.addEventListener("click", () => {
     home.classList.remove("show");
     document.body.classList.remove("blur");
-    enableScroll(); // Allow scrolling
+    enableScroll();
+    clearLoginForm();  // Clear login form when closing
+    clearSignupForm(); // Clear signup form when closing
 });
 
 // Switch between login and signup forms
@@ -73,13 +79,13 @@ signupBtn.addEventListener("click", (e) => {
     e.preventDefault();
     formContainer.classList.add("active");
     document.body.classList.add("blur");
-    disableScroll(); // Prevent scrolling when switching forms
+    disableScroll();
 });
 
 loginBtn.addEventListener("click", (e) => {
     e.preventDefault();
     formContainer.classList.remove("active");
-    disableScroll(); // Keep scrolling disabled while switching
+    disableScroll();
 });
 
 // Password show/hide toggle
@@ -148,56 +154,14 @@ signupForm.addEventListener("submit", (e) => {
         localStorage.setItem("userPassword", passwordValue);
 
         alert("Signup successful! Please login.");
-        loginBtn.click(); // Switch to login form after successful signup
-    }
-});
-
-// Login Validation
-loginForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    // Reset error messages
-    setSuccess(loginEmail);
-    setSuccess(loginPassword);
-
-    // Validate inputs
-    const emailValue = loginEmail.value.trim();
-    const passwordValue = loginPassword.value.trim();
-
-    if (emailValue === "") {
-        setError(loginEmail, "Email is required!");
-    } else {
-        setSuccess(loginEmail);
-    }
-
-    if (passwordValue === "") {
-        setError(loginPassword, "Password is required!");
-    } else {
-        setSuccess(loginPassword);
-    }
-
-    // Retrieve stored user data
-    const storedEmail = localStorage.getItem("userEmail");
-    const storedPassword = localStorage.getItem("userPassword");
-
-    // Validate login credentials
-    if (emailValue === storedEmail && passwordValue === storedPassword) {
-        alert("Login successful!");
-        home.classList.remove("show"); // Close the form
-        document.body.classList.remove("blur");
-        enableScroll(); // Allow scrolling
-        // Close the form and clear login fields
+        
+        // Close the form and clear fields
         home.classList.remove("show");
         document.body.classList.remove("blur");
         enableScroll();
-        clearLoginForm();  // Clear login form after successful login
-        clearSignupForm(); // Clear signup form as well
-    } else if (emailValue !== "" && passwordValue !== "") {
-        setError(loginEmail, "Invalid email or password!");
+        clearSignupForm();
+        formContainer.classList.remove("active"); // Switch to login form
     }
-    
-
-    
 });
 
 // Function to clear login form inputs
