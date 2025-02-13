@@ -164,6 +164,54 @@ signupForm.addEventListener("submit", (e) => {
     }
 });
 
+// Login Validation
+loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Reset error messages
+    setSuccess(loginEmail);
+    setSuccess(loginPassword);
+
+    // Validate inputs
+    const emailValue = loginEmail.value.trim();
+    const passwordValue = loginPassword.value.trim();
+
+    if (emailValue === "") {
+        setError(loginEmail, "Email is required!");
+    } else {
+        setSuccess(loginEmail);
+    }
+
+    if (passwordValue === "") {
+        setError(loginPassword, "Password is required!");
+    } else {
+        setSuccess(loginPassword);
+    }
+
+    // Retrieve stored user data
+    const storedEmail = localStorage.getItem("userEmail");
+    const storedPassword = localStorage.getItem("userPassword");
+
+    // Validate login credentials
+    if (emailValue === storedEmail && passwordValue === storedPassword) {
+        alert("Login successful!");
+        home.classList.remove("show"); // Close the form
+        document.body.classList.remove("blur");
+        enableScroll(); // Allow scrolling
+        // Close the form and clear login fields
+        home.classList.remove("show");
+        document.body.classList.remove("blur");
+        enableScroll();
+        clearLoginForm();  // Clear login form after successful login
+        clearSignupForm(); // Clear signup form as well
+    } else if (emailValue !== "" && passwordValue !== "") {
+        setError(loginEmail, "Invalid email or password!");
+    }
+    
+
+    
+});
+
 // Function to clear login form inputs
 function clearLoginForm() {
     loginEmail.value = "";
